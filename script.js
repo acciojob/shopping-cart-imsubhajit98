@@ -2,7 +2,7 @@ let itemInput = document.getElementById('item-name-input');
 let priceInput = document.getElementById('item-price-input');
 
 let button = document.getElementById('add');
-let table = document.getElementById('table');
+let table1 = document.getElementById('table');
 let total = document.getElementById('total');
 
 button.addEventListener('click', addItem);
@@ -15,7 +15,7 @@ function addItem() {
 	
     if (item !== '' && price !== "") {
         // you can start items to the screen
-        let row = document.createElement('tr');
+        let row = table1.createElement('tr');
         priceArr.push(parseInt(price));
         // console.log(priceArr);
         row.innerHTML = `<td>${item} </td> <td>${price}</td> `
