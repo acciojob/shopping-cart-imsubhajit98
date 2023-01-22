@@ -2,7 +2,6 @@ let itemInput = document.getElementById('item-name-input');
 let priceInput = document.getElementById('item-price-input');
 
 let button = document.getElementById('add');
-
 let table = document.getElementById('table');
 let total = document.getElementById('total');
 
@@ -11,7 +10,7 @@ function addItem() {
     let item = itemInput.value;
     let price = priceInput.value;
     let sum = 0;
-
+	
     if (item !== '' && price !== "") {
         // you can start items to the screen
         let row = document.createElement('tr');
