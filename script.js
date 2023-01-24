@@ -32,5 +32,7 @@ function addItem() {
         priceInput.value = '';
     }
 }
+// button.addEventListener('click', addItem)
 
-button.addEventListener('click', addItem)
+
+
